@@ -1,0 +1,48 @@
+package dsa.array;
+
+import java.util.Scanner;
+
+public class BubbleSort {
+
+	
+
+	    public static void bubbleSort(int[] arr) {
+	        int n = arr.length;
+	        boolean swapped;
+
+	        for (int i = 0; i < n - 1; i++) {
+	            swapped = false;
+
+	            for (int j = 0; j < n - i - 1; j++) {
+	                if (arr[j] > arr[j + 1]) {
+	                    // swap
+	                    int temp = arr[j];
+	                    arr[j] = arr[j + 1];
+	                    arr[j + 1] = temp;
+
+	                    swapped = true;
+	                }
+	            }
+
+	            // 🔥 Optimization: stop if already sorted
+	            if (!swapped) break;
+	        }
+	    }
+
+	    public static void main(String[] args) {
+	        int[] arr = {1, 2, 3, 4, 5};
+	        
+	        System.out.println("Enter Element:");
+	        Scanner scan=new Scanner(System.in);
+	        int n=scan.nextInt();
+	        int array[]=new int[n];
+
+	        bubbleSort(arr);
+
+	        for (int num : arr) {
+	            System.out.print(num + " ");
+	        }
+	    }
+	
+
+}
