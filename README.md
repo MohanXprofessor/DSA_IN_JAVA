@@ -188,7 +188,7 @@ Full Stack Java Developer 🚀
 
 * 📧 Email: [mohanyadav.javadev@gmail.com](mailto:mohanyadav.javadev@gmail.com)
 
-* 🔗 🌐 [LinkedIn](https://www.linkedin.com/in/inmohanyadav)
+* 🌐 [LinkedIn](https://www.linkedin.com/in/inmohanyadav)
 
 ## 🌟 Support
 
