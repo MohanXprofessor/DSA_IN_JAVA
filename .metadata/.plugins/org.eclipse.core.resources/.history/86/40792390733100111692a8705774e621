@@ -1,0 +1,32 @@
+package dsa.array;
+
+import java.util.Scanner;
+
+public class FindLowestValue {
+	
+	
+	public static void findLowestValue(int[]arr) {
+		
+		
+	}
+	
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter Array Size nth");
+		
+		Scanner scan=new Scanner(System.in);
+		int n=scan.nextInt();
+		
+		int arr[]=new int[n];
+		
+		System.out.println("Enter" +n+"Element :");
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=scan.nextInt();
+		}
+		
+		findLowestValue(arr);
+
+	}
+
+}

@@ -1,0 +1,53 @@
+package dsa.array;
+
+import java.util.Scanner;
+
+public class FindLowestValue {
+	
+	
+	public static void findLowestValue(int[]arr) {
+		int minvalue=arr[0];
+		
+		for(int i:arr)
+		{
+			if(i<minvalue) {
+				minvalue=i;
+			}
+		}
+		System.out.println("Lowest Value :"+minvalue);
+		
+		
+	}
+	
+
+	public static void main(String[] args) {
+		
+		System.out.println("Enter Array Size nth");
+		
+		Scanner scan=new Scanner(System.in);
+		int n=scan.nextInt();
+		
+		int arr[]=new int[n];
+		
+		System.out.println("Enter" +n+"Element :");
+		for(int i=0;i<arr.length;i++) {
+			arr[i]=scan.nextInt();
+		}
+		
+		System.out.println("Enter Array List are:");
+		for(int beforearr:arr) {
+			System.out.print(beforearr);
+			System.out.print(" ");
+		}
+		
+		findLowestValue(arr);
+		
+//		System.out.println("The Smallest Element For Array is:");
+//		for(int afterarr:arr) {
+//			System.out.print(afterarr);
+//			System.out.print(" ");
+//		}
+
+	}
+
+}
